@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fuentes externas de letras */
+@font-face {
+    font-family: 'Heycomic';
+    src: url(../Fuentes/Hey\ Comic.ttf);
+}
+
+@font-face {
+    font-family: 'IBMPlexSerif';
+    src: url(../Fuentes/IBMPlexSerif-Bold.ttf);
+}
+
+/* fuentes externas de letras */
+/* Pagina de inicio */
+/* Encabezado */
+
+header {
+    background-color: #D37A47;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    font-family: 'IBMPlexSerif';
+    color: white;
+    grid-area: header;
+}
+
+.i {
+    text-decoration: none;
+    color: white;
+}
+
+.inicio:hover {
+    opacity: 50%;
+}
+
+/* Fin de encabezado */
+main {
+    background-color: #DFC7A3;
+    height: 1700px;
+    grid-area: main;
+
+}
+footer{
+    grid-area: footer;
+}
+
+/* Barra de navegacion */
+.barraDeMenu {
+    background-color: #C26F41;
+    display: flex;
+    list-style: none;
+    line-height: 30px;
+    height: 30px;
+    font-family: 'IBMPlexSerif';
+    color: white;
+
+}
+
+.botom {
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.botones:hover {
+    opacity: 50%;
+    text-decoration: underline;
+}
+
+.cat {
+    display: flex;
+    flex-direction: column;
+    grid-area: cat;
+}
+
+.cat1 {
+    display: flex;
+    flex-direction: column;
+    grid-area: cat1;
+}
+
+.edi {
+    display: flex;
+    flex-direction: column;
+    grid-area: edi;
+}
+
+.au {
+    display: flex;
+    flex-direction: column;
+    grid-area: au;
+}
+
+/* Final de barra */
+/* Ofertas y cartel slide (por ahora gif) */
+.ofertasInfo {
+    display: grid;
+}
+
+.gif {
+    display: grid;
+    width: 100px;
+    height: 250px;
+    grid-area: gif;
+}
+
+.ma {
+    display: flex;
+    grid-area: ma;
+
+}
+
+.mb {
+    display: flex;
+    grid-area: mb;
+
+}
+
+.mc {
+    display: flex;
+    grid-area: mc;
+
+}
+
+.md {
+    display: flex;
+    grid-area: md;
+
+}
+
+.me {
+    display: flex;
+    grid-area: me;
+
+}
+
+.mf {
+    display: flex;
+    grid-area: mf;
+
+}
+
+.mayusc {
+    display: flex;
+    color: black;
+    font-size: x-large;
+    width: 200px;
+    font-family: 'IBMPlexSerif';
+
+}
+
+/* Fin de ofertas */
+/* redireccion para compras */
+
+.botonCompra {
+    border-radius: 20%;
+    background-color: green;
+    color: black;
+    width: 2200px;
+    height: 100px;
+    margin: 50px;
+
+}
+
+.botonCompra:hover {
+    color: black;
+    background-color: greenyellow;
+    border-radius: 20%;
+}
+
+
+.articulos {
+    display: flex;
+    flex-direction: column;
+}
+
+#novedades {
+    padding-left: 10px;
+    font-family: 'Heycomic';
+}
+
+.mangas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 150px;
+    width: 200px;
+}
+
+.novedades {
+    display: flex;
+    grid-area: nov;
+}
+
+.mJujutsu {
+    display: grid;
+    grid-area: mJujutsu;
+}
+
+.mSlam {
+    display: grid;
+    grid-area: mSlam;
+}
+
+.mHaikyu {
+    display: grid;
+    grid-area: mHaikyu;
+}
+
+.mPromised {
+    display: grid;
+    grid-area: mPromised;
+}
+
+.mGhoul {
+    display: grid;
+    grid-area: mGhoul;
+}
+
+
+
+footer {
+    background-color: #C26F41;
+}
+
+/* Fin de redirecciones compras */
+/* Fin de pagina de inicio */
+/* Grids pagina inicio */
+.contenedor {
+    margin: auto;
+    width: 100%;
+    background-color: #D37A47;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-area:
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+}
+
+.header {
+    width: 90%;
+    height: 10%;
+    display: grid;
+    font-size: 1rem;
+    grid-template-columns: 3fr 4fr 1fr;
+    grid-row: 1fr;
+    grid-template-areas:
+        "l b i ca";
+}
+
+.ofertasInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "gif gif gif"
+        "ma mb mc"
+        "md me mf";
+}
+
+.gif {
+    width: 60%;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.novedades {
+    width: 100%;
+    height: 70%;
+    display: grid;
+    font-size: 1rem;
+    grid-template-columns: repeat(5 1fr);
+    grid-row: 1fr 1fr;
+    grid-template-areas:
+        "nov nov nov nov nov"
+        "mJujuts mSlam mHaikyu mPromised mGhoul";
+}
+
+@media screen and (min-width:320px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 2fr auto auto;
+        grid-template-areas:
+            "header "
+            "main"
+            "aside"
+            "footer"
+    }
+}
+@media screen and (max-width:320px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer"
+    }
+}
+
+/* Fin grids pagina inicio */
+/* Pagina de compra a cambiar a futuro */
+.losPadrinosMagicos {
+    padding-left: 25%;
+    margin: 25px;
+    display: block;
+}
