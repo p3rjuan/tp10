@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>Mangarg</title>
     <link rel="shortcut icon" href="./Img/Logotemporal.png">
 </head>
@@ -40,8 +41,8 @@
 
             <!-- FALTA ACOMODAR EL GIF -->
             <div class="ofertasInfo">
-                <img class="gif" src="./Img/Gif muestra.gif" alt="">
-                <p class="mayusc ma">ENVIO GRATIS A TODO EL PAIS</p>
+                <img class="ani caja1 wow animate__animated animate__zoomIn "src="./Img/Gif muestra.gif" alt="">
+                <p class="mayusc ma" class="ani caja1 wow animate__animated animate__zoomIn ">ENVIO GRATIS A TODO EL PAIS</p>
                 <p class="parrafo md">En compras superiores a $2500</p>
                 <p class="mayusc mb">TU COMPRA EN SIMPLES PASOS</p>
                 <p class="parrafo me">Pagando con tarjetas, efectivo o transferencia</p>
@@ -51,15 +52,15 @@
             <!-- hasta aca vamos de a pocko -->
             <!-- EMPEZAMOS SEGUNDA SECCION -->
             <div>
-                <h1 id="novedades">NOVEDADES</h1>
+                <h1 class="ani caja1 wow animate__animated animate__zoomIn " id="novedades">NOVEDADES</h1>
                 <div class="mangas">
-                    <div class="fotos kaisen"><img class="mJujutsu" src="./Img/Jujutsu 1.png" alt="Jujutsu kaisen 01">
+                    <div class="ani caja1 wow animate__animated animate__zoomIn "  class="fotos kaisen"><img class="mJujutsu" src="./Img/Jujutsu 1.png" alt="Jujutsu kaisen 01">
                         <a class="botonCompra" href="./PAGES/JujutsuKaisen1compra.html">Jujutsu kaisen 01</a>
                     </div>
-                    <div class="fotos slam"><img class="mSlam" src="./Img/Slam dunk.png" alt="Slam Dunk 09">
+                    <div class="ani caja1 wow animate__animated animate__zoomIn " class="fotos slam"><img class="mSlam" src="./Img/Slam dunk.png" alt="Slam Dunk 09">
                         <a class="botonCompra" href="#">Slam Dunk 09</a>
                     </div>
-                    <div class="fotos haikyu"><img class="mHaikyu" src="./Img/Haikyu.png" alt="Haikyu 09">
+                    <div class="ani caja1 wow animate__animated animate__zoomIn " class="fotos haikyu"><img class="mHaikyu" src="./Img/Haikyu.png" alt="Haikyu 09">
                         <a class="botonCompra" href="#">Haikyu 09</a>
                         <div class="fotos promised"><img class="mPromised" src="./Img/thepromised.png"
                                 alt="thepromised 05">
@@ -77,6 +78,10 @@
         </footer>
 
     </div>
+      <script src="js/wow.min.js"></script>
+            <script>
+                new WOW().init();
+            </script>
 </body>
 
 </html>
