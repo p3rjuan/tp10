@@ -222,7 +222,20 @@ footer{
     display: grid;
     grid-area: mGhoul;
 }
-
+.box{
+    width: 100%;
+    height: 30px;
+    margin: 30px;
+    display:flex;
+}
+.grad1{
+    background: linear-gradient(to top, violet, red, white);
+}
+.grad2{
+   background:  radial-gradient(ellipse, black, pink, green);
+    height: 150px;
+    
+}
 
 
 footer {
